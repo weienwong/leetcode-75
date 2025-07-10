@@ -13,7 +13,6 @@ func pairSum(head *ListNode) int {
 	// we know the length of the linked list is even
 	slow, fast := head, head
 	var prev *ListNode
-	prev = nil
 
 	// Find the middle of the linked list using the slow and fast pointer technique
 	for fast != nil && fast.Next != nil {
