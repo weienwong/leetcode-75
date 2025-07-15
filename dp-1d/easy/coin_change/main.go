@@ -10,6 +10,7 @@ func coinChange(coins []int, amount int) int {
 	for i := range dp {
 		dp[i] = amount + 1
 	}
+
 	dp[0] = 0 // Base case: 0 coins needed to make amount 0
 
 	// Fill the dp array
